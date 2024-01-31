@@ -37,6 +37,8 @@ const characters = [
 const button = document.getElementById("btn");
 const passwordText = document.getElementById("password-text");
 const alertText = document.getElementById("alert-box");
+const saveBtn = document.getElementById("save-btn");
+const savedList = document.getElementById("saved-list");
 
 button.addEventListener("click", function () {
   let password = "";
@@ -47,14 +49,30 @@ button.addEventListener("click", function () {
   if (password.length < 8) {
     passwordText.style.color = "red";
     alertText.innerHTML = "Password too short";
-    alertText.classList.add("too-short");
+    alertText.classList.add("incorrect-password");
+    saveBtn.classList.add("display-none");
+  } else if (checkForDigit(password) === false) {
+    passwordText.style.color = "red";
+    alertText.innerHTML = "Password should contain a number";
+    alertText.classList.add("incorrect-password");
+    saveBtn.classList.add("display-none");
   } else {
     passwordText.style.color = "green";
-    alertText.classList.remove("too-short");
+    alertText.classList.remove("incorrect-password");
     alertText.innerHTML = "";
+    saveBtn.classList.remove("display-none");
   }
+});
+
+saveBtn.addEventListener("click", function () {
+  savedList.innerHTML = `${passwordText.textContent}`;
 });
 
 function getRandomNumber() {
   return Math.floor(Math.random() * characters.length);
+}
+
+function checkForDigit(password) {
+  const regex = /.*\d.*/;
+  return regex.test(password);
 }

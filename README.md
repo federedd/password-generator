@@ -16,7 +16,7 @@ This is a simple password generator web application. It is my first real JavaScr
 
 ## Features
 
-![Sample Image](Screenshot 2024-01-31 at 14.16.21.png)
+![demo-image](./demo.png)
 
 - Generate random passwords with a click of a button.
 - Validate generated passwords to ensure they meet certain criteria (e.g., minimum length, inclusion of a number).

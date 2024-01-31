@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.container {
+  width: fit-content;
+  display: flex;
+  margin: auto;
+
+  flex-direction: column;
+  position: fixed;
+}
+
+button {
+  margin: 10px;
+  padding: 10px;
+  font-family: Syne;
+  text-transform: uppercase;
+  background-color: #4d5d53;
+  border: none;
+  border-radius: 2px;
+  color: whitesmoke;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#password-text {
+  font-family: Inter;
+  height: 45px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 2px;
+  border: 0.5px solid black;
+  display: flex;
+  align-items: center;
+}
+
+#alert-box {
+  font-family: Inter;
+  text-align: center;
+}
+
+.too-short {
+  background-color: red;
+  margin: 10px;
+  padding: 10px;
+  position: absolute;
+  top: 250px;
+  border-radius: 2px;
+}

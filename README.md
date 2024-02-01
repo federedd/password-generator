@@ -27,7 +27,7 @@ This is a simple password generator web application. It is my first real JavaScr
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/your-password-generator.git
+   git clone https://github.com/federedd/your-password-generator.git
    ```
 
 2. Open the project folder:

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/svg+xml" href="./assets/OfficerG.svg" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Syne:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -13,11 +14,13 @@
     <title>Password Generator by Fedi</title>
   </head>
   <body>
-    <div id="alert-box"></div>
     <div class="container">
-      <div id="password-text">X X X X X X X</div>
-      <button id="btn">generate random</button>
-      <button id="save-btn" class="display-none">save password</button>
+      <div id="alert-box"></div>
+      <div id="password-text">Generate password</div>
+      <div class="btn-container">
+        <button id="btn">generate random</button>
+        <button id="save-btn" class="display-none">save password</button>
+      </div>
       <div class="saved-list" id="saved-list"></div>
     </div>
     <script src="app.js"></script>

@@ -1,10 +1,8 @@
-# password-generator
-
 # Password Generator by Fedi
 
 ## Overview
 
-This is a simple password generator web application. It is my first real JavaScript project, built as a practice exercise to enhance JavaScript skills. The application allows users to generate random passwords and save them for later use.
+This is a simple password generator web application. It is my first real Vanilla JavaScript project, built as a practice exercise to enhance JavaScript skills, mainly adding and removing classes to modify the appearance of the application. The application allows users to generate random passwords and save them for later use.
 
 ## Table of Contents
 
@@ -16,7 +14,7 @@ This is a simple password generator web application. It is my first real JavaScr
 
 ## Features
 
-![demo-image](./demo.png)
+![demo-image](./assets/password-generator-github-demo.png)
 
 - Generate random passwords with a click of a button.
 - Validate generated passwords to ensure they meet certain criteria (e.g., minimum length, inclusion of a number).
@@ -55,7 +53,3 @@ If you'd like to contribute to this project, please follow these steps:
 4. Make your changes and commit them: `git commit -m 'Description of the changes'`.
 5. Push your changes to your fork: `git push origin feature-name`.
 6. Create a pull request on the original repository.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).

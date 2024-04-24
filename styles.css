@@ -9,25 +9,29 @@ body {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  background: #289dea;
+  background: linear-gradient(to right, #289dea 0%, #2388cb 40%, #144e75 100%);
 }
 .container {
   width: fit-content;
   display: flex;
-  margin: auto;
-
   flex-direction: column;
-  position: fixed;
+  gap: 5px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 button {
+  transition: 0.5s ease;
+  border: 2px solid #4d5d53;
+  color: #4d5d53;
+  background-color: white;
   margin: 10px;
   padding: 10px;
   font-family: Syne;
   text-transform: uppercase;
-  background-color: #4d5d53;
-  border: none;
   border-radius: 2px;
-  color: whitesmoke;
   font-size: 20px;
   cursor: pointer;
 }
@@ -49,11 +53,9 @@ button {
 }
 
 .incorrect-password {
-  background-color: red;
+  background-color: rgba(255, 0, 0, 0.616);
   margin: 10px;
   padding: 10px;
-  position: absolute;
-  top: 250px;
   border-radius: 2px;
 }
 
@@ -63,6 +65,36 @@ button {
 
 .saved-list {
   font-family: Inter;
-  padding: 10px;
+
+  text-align: center;
+  font-size: 20px;
+}
+
+.correct-password {
+  background-color: rgba(0, 128, 0, 0.743);
   margin: 10px;
+  padding: 10px;
+  border-radius: 2px;
+}
+
+button:hover {
+  transform: translateY(6px);
+  transition: 1s ease;
+  margin: 10px;
+  padding: 10px;
+  font-family: Syne;
+  text-transform: uppercase;
+  background-color: #4d5d53;
+  border-radius: 2px;
+  color: whitesmoke;
+  font-size: 20px;
+  cursor: pointer;
+  border: 2px solid white;
+}
+
+@media screen and (max-width: 430px) {
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+  }
 }

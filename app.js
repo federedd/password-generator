@@ -51,15 +51,18 @@ button.addEventListener("click", function () {
     alertText.innerHTML = "Password too short";
     alertText.classList.add("incorrect-password");
     saveBtn.classList.add("display-none");
+    alertText.classList.remove("correct-password");
   } else if (checkForDigit(password) === false) {
     passwordText.style.color = "red";
     alertText.innerHTML = "Password should contain a number";
     alertText.classList.add("incorrect-password");
     saveBtn.classList.add("display-none");
+    alertText.classList.remove("correct-password");
   } else {
     passwordText.style.color = "green";
     alertText.classList.remove("incorrect-password");
-    alertText.innerHTML = "";
+    alertText.innerHTML = "Password is OK";
+    alertText.classList.add("correct-password");
     saveBtn.classList.remove("display-none");
   }
 });

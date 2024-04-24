@@ -10,7 +10,6 @@ This is a simple password generator web application. It is my first real Vanilla
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
